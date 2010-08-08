@@ -11,7 +11,7 @@ treated as the node's content, hashes representing this node's
 attributes or further arrays which are then made into child nodes by
 the same rules.
 
-The syntax can be described by the following rammar:
+The syntax can be described by the following grammar:
 
     node       ::= [<node-name>, (<node> | <attributes> | <content>) ...]
     node-name  ::= <Symbol>
