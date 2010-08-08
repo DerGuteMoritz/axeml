@@ -2,6 +2,10 @@
 
 AxeML is a notation for Nokogiri XML documents inspired by [SXML](http://okmij.org/ftp/Scheme/SXML.html).
 
+## Installation
+
+    gem install axeml
+
 ## Syntax
 
 A document is represented by an array, possibly nested. The first
