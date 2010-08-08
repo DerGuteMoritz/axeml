@@ -1,6 +1,6 @@
 # AxeML
 
-AxeML is a notation for Nokogiri XML documents inspired by [SXML](http://okmij.org/ftp/Scheme/SXML.html).
+AxeML is a notation for Nokogiri XML documents inspired by [SXML](http://en.wikipedia.org/wiki/SXML).
 
 ## Installation
 
