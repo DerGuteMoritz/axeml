@@ -13,14 +13,15 @@ element of each array must be a symbol indicating the node
 name. Further elements may either be strings or numbers which are
 treated as the node's content, hashes representing this node's
 attributes or further arrays which are then made into child nodes by
-the same rules.
+the same rules. Instances of `ActiveSupport::SafeBuffer` (i.e. strings
+marked as `html_safe`) are injected without quoting.
 
 The syntax can be described by the following grammar:
 
     node       ::= [<node-name>, (<node> | <attributes> | <content>) ...]
     node-name  ::= <Symbol>
     attributes ::= <Hash>
-    content    ::= <String> | <Fixnum> | <Float>
+    content    ::= <String> | <Fixnum> | <Float> | <ActiveSupport::SafeBuffer>
 
 
 ## Example
