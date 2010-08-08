@@ -13,10 +13,10 @@ the same rules.
 
 The syntax can be described by the following rammar:
 
-    node       ::= [node-name, (node | attributes | content) ...]
-    node-name  ::= Symbol
-    attributes ::= Hash
-    content    ::= String | Fixnum | Float
+    node       ::= [<node-name>, (<node> | <attributes> | <content>) ...]
+    node-name  ::= <Symbol>
+    attributes ::= <Hash>
+    content    ::= <String> | <Fixnum> | <Float>
 
 
 ## Example
