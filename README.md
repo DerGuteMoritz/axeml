@@ -34,10 +34,10 @@ The syntax can be described by the following grammar:
     <?xml version="1.0"?>
     <ul class="menu">
       <li>
-	<a href="/foo">foo</a>
+        <a href="/foo">foo</a>
       </li>
       <li>
-	<a href="/bar">bar</a>
+        <a href="/bar">bar</a>
       </li>
     </ul>
     
