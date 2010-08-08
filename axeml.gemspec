@@ -4,24 +4,27 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{axml}
+  s.name = %q{axeml}
   s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Moritz Heidkamp"]
   s.date = %q{2010-08-08}
-  s.description = %q{AxML is a notation for Nokogiri XML documents inspired by SXML}
+  s.description = %q{AxeML is a notation for Nokogiri XML documents inspired by SXML}
   s.email = %q{moritz.heidkamp@bevuta.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.md"
   ]
   s.files = [
-    "LICENSE",
+    ".document",
+     ".gitignore",
+     "LICENSE",
      "README.md",
      "Rakefile",
      "VERSION",
-     "lib/axml.rb",
+     "axeml.gemspec",
+     "lib/axeml.rb",
      "spec/basic_spec.rb",
      "spec/spec_helper.rb"
   ]

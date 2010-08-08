@@ -1,11 +1,11 @@
 require Pathname.new(__FILE__).dirname.join('spec_helper')
 
-describe AxML do
+describe AxeML do
 
   describe 'only root' do 
     
     before :each do
-      @doc = AxML.transform([:p, 'hey'])
+      @doc = AxeML.transform([:p, 'hey'])
     end
 
     it 'should convert to a nokogiri tree' do
@@ -21,7 +21,7 @@ describe AxML do
   end
 
   it 'should allow nesting' do
-    doc = AxML.transform([:foo, 'zing', [:bar, [:baz, "hello"], [:another, "here"]]])
+    doc = AxeML.transform([:foo, 'zing', [:bar, [:baz, "hello"], [:another, "here"]]])
     doc.root.node_name.should == 'foo'
     doc.root.content == 'zing'
     doc.root.children.size.should == 2
@@ -36,7 +36,7 @@ describe AxML do
   end
 
   it 'should allow attributes' do
-    doc = AxML.transform([:foo, { :bar => 'baz', :qux => '123' }, { :bar => 'heh!'}])
+    doc = AxeML.transform([:foo, { :bar => 'baz', :qux => '123' }, { :bar => 'heh!'}])
     doc.root.attributes['bar'].content.should == 'heh!'
     doc.root.attributes['qux'].content.should == '123'
   end

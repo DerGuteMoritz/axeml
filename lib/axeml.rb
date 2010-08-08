@@ -1,18 +1,18 @@
 require 'rubygems'
 require 'nokogiri'
 
-module AxML
+module AxeML
   
-  def self.transform(axml)
+  def self.transform(axeml)
     doc = Nokogiri::XML::Document.new
-    transform_element(axml, doc)
+    transform_element(axeml, doc)
     doc
   end
 
-  def self.transform_element(axml, doc, parent = doc)
-    el = parent.add_child(Nokogiri::XML::Element.new(axml[0].to_s, doc))
+  def self.transform_element(axeml, doc, parent = doc)
+    el = parent.add_child(Nokogiri::XML::Element.new(axeml[0].to_s, doc))
     
-    axml[1..-1].each do |e|
+    axeml[1..-1].each do |e|
       case e 
       when Array
         el.add_child(transform_element(e, doc, el))

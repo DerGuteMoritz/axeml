@@ -1,1 +1,1 @@
-require Pathname.new(__FILE__).dirname.join('..', 'lib', 'axml')
+require Pathname.new(__FILE__).dirname.join('..', 'lib', 'axeml')
