@@ -40,5 +40,11 @@ describe AxeML do
     doc.root.attributes['bar'].content.should == 'heh!'
     doc.root.attributes['qux'].content.should == '123'
   end
+
+  it 'should allow arbitrary list wrapping' do
+    doc = AxeML.transform([:foo, [[[:foo, 'bar']], [:foo, 'baz']]])
+    doc.search('foo foo:first').text.should == 'bar'
+    doc.search('foo foo:last').text.should == 'baz'
+  end
   
 end
