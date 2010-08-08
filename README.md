@@ -43,7 +43,7 @@ The syntax can be described by the following grammar:
     
 
 Note that since `AxeML.transform` returns an instance of
-`Nokogiri::XML::Document` you can directly use its search facilities
+`Nokogiri::XML::Document` you can directly use its search facilities,
 for example:
 
     AxeML.transform([:foo, [:bar, [:baz, "very well"]]]).search('foo baz').text
