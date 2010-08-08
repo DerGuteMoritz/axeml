@@ -40,6 +40,11 @@ The syntax can be described by the following grammar:
 	<a href="/bar">bar</a>
       </li>
     </ul>
+    
+## ToDo
+
+* actually implement transformation rules :-)
+* support XML namespaces
 
 ## Copyright
 
