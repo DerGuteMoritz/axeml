@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'active_support'
 
 module AxeML
   
@@ -18,7 +19,11 @@ module AxeML
         when Array
           transform_element(e, doc, el)
         when String
-          el.content += e
+          if e.html_safe?
+            el.add_child(e)
+          else
+            el.content += e
+          end
         when Fixnum, Float
           el.content += e.to_s
         when Hash

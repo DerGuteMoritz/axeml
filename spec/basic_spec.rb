@@ -46,5 +46,10 @@ describe AxeML do
     doc.search('foo foo:first').text.should == 'bar'
     doc.search('foo foo:last').text.should == 'baz'
   end
+
+  it 'should respect html_safe' do
+    doc = AxeML.transform([:foo, '<bar>okay</bar>'.html_safe])
+    doc.search('bar').text.should == 'okay'
+  end
   
 end
