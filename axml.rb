@@ -18,7 +18,7 @@ module AxML
         el.add_child(transform_element(e, doc, el))
       when String
         el.content += e
-      when Fixnum
+      when Fixnum, Float
         el.content += e.to_s
       when Hash
         e.each do |k,v|
