@@ -1,6 +1,6 @@
-# AxML
+# AxeML
 
-AxML is a notation for Nokogiri XML documents inspired by [SXML](http://okmij.org/ftp/Scheme/SXML.html).
+AxeML is a notation for Nokogiri XML documents inspired by [SXML](http://okmij.org/ftp/Scheme/SXML.html).
 
 ## Syntax
 
@@ -21,9 +21,9 @@ The syntax can be described by the following rammar:
 
 ## Example
 
-    AxML.transform([:ul, { :class => 'menu' },
-                    [:li, [:a, { :href => '/foo' }, 'foo']],
-                    [:li, [:a, { :href => '/bar' }, 'bar']]]).to_s
+    AxeML.transform([:ul, { :class => 'menu' },
+                     [:li, [:a, { :href => '/foo' }, 'foo']],
+                     [:li, [:a, { :href => '/bar' }, 'bar']]]).to_s
 
     =>
 
