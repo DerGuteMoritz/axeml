@@ -42,7 +42,7 @@ The syntax can be described by the following grammar:
     </ul>
     
 
-Note that since AxeML.transform returns an instance of
+Note that since `AxeML.transform` returns an instance of
 `Nokogiri::XML::Document` you can directly use its search facilities
 for example:
 
