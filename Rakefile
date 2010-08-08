@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "axml"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{An SXML-like library for contructing Nokogiri documents}
+    gem.description = %Q{AxML is a notation for Nokogiri XML documents inspired by SXML}
     gem.email = "moritz.heidkamp@bevuta.com"
     gem.homepage = "http://github.com/DerGuteMoritz/axml"
     gem.authors = ["Moritz Heidkamp"]
